@@ -98,7 +98,7 @@ export const resumeData = {
       role: "后期制作",
       period: "2023.05 - 2023.07",
       content: "视觉特效与调色：负责视频后期技术工作，使用 Adobe AE 制作特效，运用 DaVinci Resolve 进行调色。作品获校级特等奖。",
-      videoUrl: "/src/assets/showcases/校级宣传视频 - 百年征程，精神永恒.mp4"
+      videoUrl: "/showcases/校级宣传视频 - 百年征程，精神永恒.mp4"
     },
     {
       title: "“游戏配乐与玩家情绪关系”课题研究",
