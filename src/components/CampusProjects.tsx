@@ -19,13 +19,13 @@ const CampusProjects: React.FC = () => {
               <span className="text-tertiary text-sm sm:ml-auto">{project.period}</span>
             </div>
             {project.items ? (
-              <ul className="list-disc list-outside pl-4 space-y-2 text-sm text-anthropic-dark/80">
+              <ul className="list-disc list-outside pl-4 space-y-2 text-sm text-anthropic-dark/80 m-0">
                 {project.items.map((item, idx) => (
                   <li key={idx} className="marker:text-anthropic-mid">{item}</li>
                 ))}
               </ul>
             ) : (
-              <p className="text-sm text-anthropic-dark/80">{project.content}</p>
+              <p className="text-sm text-anthropic-dark/80 m-0">{project.content}</p>
             )}
           </div>
         ))}

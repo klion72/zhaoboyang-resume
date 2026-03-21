@@ -18,7 +18,7 @@ const WorkExperience: React.FC = () => {
               <span className="text-anthropic-mid hidden sm:inline">|</span>
               <span className="text-primary text-sm sm:ml-auto">{exp.period}</span>
             </div>
-            <ul className="list-disc list-outside pl-4 space-y-3 text-sm text-anthropic-dark/80">
+            <ul className="list-disc list-outside pl-4 space-y-3 text-sm text-anthropic-dark/80 m-0">
               {exp.highlights.map((highlight, idx) => (
                 <li key={idx} className="marker:text-anthropic-mid">
                   <div>
