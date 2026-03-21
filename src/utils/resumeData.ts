@@ -60,10 +60,12 @@ export const resumeData = {
         {
           label: "长线内容叙事",
           content: "策划、拍摄并剪辑 28 分钟生活记录 Vlog。在无官方推荐的情况下，单条视频获得 4.5 万播放，转化为 300+ 关注者。",
+          videoUrl: "/showcases/vlog.mp4"
         },
         {
           label: "垂直圈层吸粉",
           content: "针对 B 站音乐/ACG 区受众，发布架子鼓翻奏视频（主攻金属核/游戏 OP）。3 条视频获得 2 万+ 播放。",
+          videoUrl: "/showcases/架子鼓翻奏.mp4"
         },
       ],
     },
