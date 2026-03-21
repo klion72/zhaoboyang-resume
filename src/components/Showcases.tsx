@@ -9,7 +9,7 @@ const Showcases: React.FC = () => {
   if (showcases.length === 0) return null;
 
   return (
-    <section className="mt-8 no-print">
+    <section className="mt-10 no-print">
       <h2 className="section-title">
         <PlayCircle size={20} className="text-primary" /> 作品橱窗
       </h2>
