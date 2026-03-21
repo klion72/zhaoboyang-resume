@@ -1,4 +1,5 @@
 import PersonalInfo from './components/PersonalInfo';
+import Showcases from './components/Showcases';
 import CoreAdvantages from './components/CoreAdvantages';
 import Education from './components/Education';
 import WorkExperience from './components/WorkExperience';
@@ -14,6 +15,7 @@ function App() {
         
         <main className="space-y-2">
           <PersonalInfo />
+          <Showcases />
           <CoreAdvantages />
           <Education />
           <WorkExperience />
