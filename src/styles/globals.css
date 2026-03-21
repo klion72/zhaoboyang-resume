@@ -25,7 +25,7 @@
 
 @layer components {
   .section-container {
-    @apply mt-10;
+    @apply mt-14;
   }
   
   .section-title {
