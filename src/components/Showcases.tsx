@@ -23,7 +23,7 @@ const Showcases: React.FC = () => {
             </h3>
             <button 
               onClick={() => setActiveVideo(null)}
-              className="flex items-center gap-1 text-sm text-anthropic-mid hover:text-primary transition-colors bg-white px-3 py-1 rounded-full border border-anthropic-light-gray/50 shadow-sm"
+              className="flex items-center gap-1 text-sm text-anthropic-dark hover:text-primary transition-colors bg-anthropic-light px-3 py-1 rounded-full border border-anthropic-light-gray shadow-sm"
             >
               <X size={14} /> 关闭视频
             </button>
@@ -49,17 +49,17 @@ const Showcases: React.FC = () => {
             onClick={() => setActiveVideo(showcase.videoUrl)}
             className={`text-left p-4 rounded-xl border transition-all flex flex-col gap-1 group ${
               activeVideo === showcase.videoUrl 
-                ? 'bg-white border-primary/40 shadow-md scale-[1.02]' 
-                : 'bg-anthropic-light-gray/20 border-anthropic-light-gray/50 hover:bg-white hover:border-anthropic-light-gray hover:shadow-sm'
+                ? 'bg-anthropic-light border-primary shadow-sm ring-1 ring-primary/20' 
+                : 'bg-anthropic-light-gray/30 border-anthropic-light-gray hover:bg-anthropic-light hover:border-anthropic-mid hover:shadow-sm'
             }`}
           >
-            <div className="flex items-start justify-between w-full">
+            <div className="flex items-start justify-between w-full gap-2">
               <span className={`font-headings font-semibold text-[15px] line-clamp-1 ${activeVideo === showcase.videoUrl ? 'text-primary' : 'text-anthropic-dark group-hover:text-primary transition-colors'}`}>
                 {showcase.title}
               </span>
-              <PlayCircle size={18} className={`${activeVideo === showcase.videoUrl ? 'text-primary' : 'text-anthropic-mid group-hover:text-primary transition-colors'}`} />
+              <PlayCircle size={18} className={`shrink-0 ${activeVideo === showcase.videoUrl ? 'text-primary' : 'text-anthropic-mid group-hover:text-primary transition-colors'}`} />
             </div>
-            <span className="text-sm text-anthropic-dark/70 line-clamp-2 mt-1">
+            <span className="text-sm text-anthropic-dark/70 line-clamp-2 mt-1 font-body">
               {showcase.description}
             </span>
           </button>
