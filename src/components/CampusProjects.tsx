@@ -9,7 +9,7 @@ const CampusProjects: React.FC = () => {
       </h2>
       <div className="flex flex-col gap-6">
         {resumeData.campusProjects.map((project, index) => (
-          <div key={index} className="flex flex-col gap-3 relative pl-4 border-l-2 border-anthropic-light-gray hover:border-tertiary transition-colors">
+          <div key={index} className="flex flex-col gap-3 relative pl-4 border-l-2 border-anthropic-light-gray hover:border-tertiary transition-colors overflow-hidden pb-1">
             <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-anthropic-light border-2 border-tertiary"></div>
             <div className="flex flex-wrap items-baseline gap-2">
               <span className="font-headings font-semibold text-anthropic-dark text-[15px]">{project.title}</span>
