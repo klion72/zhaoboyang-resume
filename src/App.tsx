@@ -13,7 +13,7 @@ function App() {
       <div className="max-w-[960px] mx-auto bg-[#faf9f5] rounded-2xl shadow-xl shadow-[#141413]/10 p-6 md:p-10 border border-[#b0aea5]/30">
         <PrintButton />
         
-        <main className="space-y-2">
+        <main className="space-y-0">
           <PersonalInfo />
           <Showcases />
           <CoreAdvantages />

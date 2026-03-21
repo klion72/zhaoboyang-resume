@@ -5,7 +5,7 @@ const PersonalInfo: React.FC = () => {
   const { name, phone, email, location, birthDate, tagline, interests } = resumeData.personalInfo;
 
   return (
-    <header className="border-b border-anthropic-light-gray pb-8 mb-8">
+    <header className="mb-0">
       <div className="flex flex-col md:flex-row gap-8 mb-6">
         {/* 左侧个人信息 */}
         <div className="flex-1">
