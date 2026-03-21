@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #d97757;
+  --color-secondary: #6a9bcc;
+  --color-tertiary: #788c5d;
+  --color-anthropic-dark: #141413;
+  --color-anthropic-light: #faf9f5;
+  --color-anthropic-mid: #b0aea5;
+  --color-anthropic-light-gray: #e8e6dc;
+
+  --font-sans: "Lora", Georgia, serif;
+  --font-body: "Lora", Georgia, serif;
+  --font-headings: "Poppins", Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-anthropic-light-gray text-anthropic-dark font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headings tracking-tight;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply mt-8;
+  }
+  
+  .section-title {
+    @apply text-2xl font-headings font-semibold text-primary flex items-center gap-3 mb-5 border-b border-anthropic-light-gray pb-3;
+  }
+}
+
+@media print {
+  @page {
+    margin: 15mm;
+  }
+  body {
+    @apply bg-anthropic-light;
+  }
+  .no-print {
+    @apply !hidden;
+  }
+}
