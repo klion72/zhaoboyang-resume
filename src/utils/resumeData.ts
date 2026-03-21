@@ -9,6 +9,23 @@ export const resumeData = {
     tagline: "懂心理学的爆款制造者",
     interests: "资深 ACG / 二次元文化受众",
   },
+  showcases: [
+    {
+      title: "《百年征程，精神永恒》",
+      description: "校级宣传视频（后期制作）",
+      videoUrl: "/showcases/校级宣传视频 - 百年征程，精神永恒.mp4"
+    },
+    {
+      title: "生活记录 Vlog",
+      description: "长线内容叙事（策划/拍摄/剪辑）",
+      videoUrl: "/showcases/vlog.mp4"
+    },
+    {
+      title: "架子鼓翻奏",
+      description: "垂直圈层吸粉（音乐/ACG）",
+      videoUrl: "/showcases/架子鼓翻奏.mp4"
+    }
+  ],
   coreAdvantages: [
     {
       title: "从 0 到 1 账号孵化",
@@ -60,12 +77,10 @@ export const resumeData = {
         {
           label: "长线内容叙事",
           content: "策划、拍摄并剪辑 28 分钟生活记录 Vlog。在无官方推荐的情况下，单条视频获得 4.5 万播放，转化为 300+ 关注者。",
-          videoUrl: "/showcases/vlog.mp4"
         },
         {
           label: "垂直圈层吸粉",
           content: "针对 B 站音乐/ACG 区受众，发布架子鼓翻奏视频（主攻金属核/游戏 OP）。3 条视频获得 2 万+ 播放。",
-          videoUrl: "/showcases/架子鼓翻奏.mp4"
         },
       ],
     },
@@ -100,7 +115,6 @@ export const resumeData = {
       role: "后期制作",
       period: "2023.05 - 2023.07",
       content: "视觉特效与调色：负责视频后期技术工作，使用 Adobe AE 制作特效，运用 DaVinci Resolve 进行调色。作品获校级特等奖。",
-      videoUrl: "/showcases/校级宣传视频 - 百年征程，精神永恒.mp4"
     },
     {
       title: "“游戏配乐与玩家情绪关系”课题研究",

@@ -1,10 +1,7 @@
-import { BarChart3, PlayCircle } from 'lucide-react';
+import { BarChart3 } from 'lucide-react';
 import { resumeData } from '../utils/resumeData';
-import { useState } from 'react';
 
 const CampusProjects: React.FC = () => {
-  const [activeVideo, setActiveVideo] = useState<string | null>(null);
-
   return (
     <section className="section-container">
       <h2 className="section-title">
@@ -29,31 +26,6 @@ const CampusProjects: React.FC = () => {
               </ul>
             ) : (
               <p className="text-sm text-anthropic-dark/80">{project.content}</p>
-            )}
-            
-            {project.videoUrl && (
-              <div className="mt-2 no-print">
-                {activeVideo === project.videoUrl ? (
-                  <div className="rounded-lg overflow-hidden border border-anthropic-light-gray/50 shadow-sm max-w-2xl bg-black">
-                    <video 
-                      src={project.videoUrl} 
-                      controls 
-                      autoPlay 
-                      className="w-full aspect-video"
-                    >
-                      您的浏览器不支持视频播放。
-                    </video>
-                  </div>
-                ) : (
-                  <button 
-                    onClick={() => setActiveVideo(project.videoUrl as string)}
-                    className="inline-flex items-center gap-2 px-3 py-1.5 bg-anthropic-light-gray/30 hover:bg-anthropic-light-gray/50 text-anthropic-dark rounded-md text-sm font-medium transition-colors border border-anthropic-light-gray"
-                  >
-                    <PlayCircle size={16} className="text-primary" />
-                    <span>查看作品视频</span>
-                  </button>
-                )}
-              </div>
             )}
           </div>
         ))}
