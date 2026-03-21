@@ -10,12 +10,12 @@ const Education: React.FC = () => {
       <div className="flex flex-col gap-2">
         {resumeData.education.map((edu, index) => (
           <div key={index} className="flex flex-col gap-1 p-4 bg-anthropic-light-gray/20 rounded-lg">
-            <div className="flex flex-wrap items-end gap-2">
-              <span className="font-headings font-semibold text-anthropic-dark text-[15px] leading-none">{edu.school}</span>
-              <span className="text-anthropic-mid leading-none">|</span>
-              <span className="text-anthropic-dark leading-none">{edu.major} ({edu.degree})</span>
-              <span className="text-anthropic-mid hidden sm:inline leading-none">|</span>
-              <span className="text-secondary text-sm sm:ml-auto leading-none">{edu.period}</span>
+            <div className="flex flex-wrap items-baseline gap-2">
+              <span className="font-headings font-semibold text-anthropic-dark text-[15px]">{edu.school}</span>
+              <span className="text-anthropic-mid">|</span>
+              <span className="text-anthropic-dark">{edu.major} ({edu.degree})</span>
+              <span className="text-anthropic-mid hidden sm:inline">|</span>
+              <span className="text-secondary text-sm sm:ml-auto">{edu.period}</span>
             </div>
             <p className="text-sm text-anthropic-dark/80 mt-1">主修课程：{edu.courses}</p>
           </div>

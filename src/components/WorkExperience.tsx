@@ -9,16 +9,16 @@ const WorkExperience: React.FC = () => {
       </h2>
       <div className="flex flex-col gap-6">
         {resumeData.workExperience.map((exp, index) => (
-          <div key={index} className="flex flex-col gap-3 relative pl-4 border-l-2 border-anthropic-light-gray hover:border-primary transition-colors overflow-hidden pb-1">
+          <div key={index} className="flex flex-col gap-3 relative pl-4 border-l-2 border-anthropic-light-gray hover:border-primary transition-colors">
             <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-anthropic-light border-2 border-primary"></div>
-            <div className="flex flex-wrap items-end gap-2">
-              <span className="font-headings font-semibold text-anthropic-dark text-[15px] leading-none">{exp.company}</span>
-              <span className="text-anthropic-mid leading-none">|</span>
-              <span className="text-anthropic-dark leading-none">{exp.role}</span>
-              <span className="text-anthropic-mid hidden sm:inline leading-none">|</span>
-              <span className="text-primary text-sm sm:ml-auto leading-none">{exp.period}</span>
+            <div className="flex flex-wrap items-baseline gap-2">
+              <span className="font-headings font-semibold text-anthropic-dark text-[15px]">{exp.company}</span>
+              <span className="text-anthropic-mid">|</span>
+              <span className="text-anthropic-dark">{exp.role}</span>
+              <span className="text-anthropic-mid hidden sm:inline">|</span>
+              <span className="text-primary text-sm sm:ml-auto">{exp.period}</span>
             </div>
-            <ul className="list-disc list-outside pl-4 space-y-3 text-sm text-anthropic-dark/80 m-0">
+            <ul className="list-disc list-outside pl-4 space-y-3 text-sm text-anthropic-dark/80">
               {exp.highlights.map((highlight, idx) => (
                 <li key={idx} className="marker:text-anthropic-mid">
                   <div>

@@ -25,11 +25,11 @@
 
 @layer components {
   .section-container {
-    @apply mt-10 relative outline outline-1 outline-blue-500/50;
+    @apply mt-10;
   }
   
   .section-title {
-    @apply text-2xl font-headings font-semibold text-primary flex items-center gap-3 mb-6 border-b border-anthropic-light-gray pb-3 relative outline outline-1 outline-red-500/50;
+    @apply text-2xl font-headings font-semibold text-primary flex items-center gap-3 mb-6 border-b border-anthropic-light-gray pb-3;
   }
 }
 
