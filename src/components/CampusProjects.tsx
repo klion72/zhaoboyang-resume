@@ -11,12 +11,12 @@ const CampusProjects: React.FC = () => {
         {resumeData.campusProjects.map((project, index) => (
           <div key={index} className="flex flex-col gap-3 relative pl-4 border-l-2 border-anthropic-light-gray hover:border-tertiary transition-colors overflow-hidden pb-1">
             <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-anthropic-light border-2 border-tertiary"></div>
-            <div className="flex flex-wrap items-baseline gap-2">
-              <span className="font-headings font-semibold text-anthropic-dark text-[15px]">{project.title}</span>
-              <span className="text-anthropic-mid">|</span>
-              <span className="text-anthropic-dark">{project.role}</span>
-              <span className="text-anthropic-mid hidden sm:inline">|</span>
-              <span className="text-tertiary text-sm sm:ml-auto">{project.period}</span>
+            <div className="flex flex-wrap items-end gap-2">
+              <span className="font-headings font-semibold text-anthropic-dark text-[15px] leading-none">{project.title}</span>
+              <span className="text-anthropic-mid leading-none">|</span>
+              <span className="text-anthropic-dark leading-none">{project.role}</span>
+              <span className="text-anthropic-mid hidden sm:inline leading-none">|</span>
+              <span className="text-tertiary text-sm sm:ml-auto leading-none">{project.period}</span>
             </div>
             {project.items ? (
               <ul className="list-disc list-outside pl-4 space-y-2 text-sm text-anthropic-dark/80 m-0">
