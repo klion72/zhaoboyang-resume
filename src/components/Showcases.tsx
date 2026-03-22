@@ -9,21 +9,21 @@ const Showcases: React.FC = () => {
   if (showcases.length === 0) return null;
 
   return (
-    <section className="section-container no-print pb-4">
+    <section className="section-container no-print">
       <h2 className="section-title">
         <PlayCircle size={20} className="text-primary" /> 作品橱窗
       </h2>
       
       {/* 视频播放器区域 */}
       {activeVideo && (
-        <div className="mb-6 bg-anthropic-light-gray/20 border border-anthropic-light-gray/50 rounded-xl p-4 transition-all duration-300">
+        <div className="mb-6 bg-white border border-black/[0.04] shadow-sm rounded-2xl p-4 transition-all duration-300">
           <div className="flex justify-between items-center mb-3">
             <h3 className="font-headings font-semibold text-anthropic-dark">
               {showcases.find(s => s.videoUrl === activeVideo)?.title}
             </h3>
             <button 
               onClick={() => setActiveVideo(null)}
-              className="flex items-center gap-1 text-sm text-anthropic-mid hover:text-primary transition-colors bg-white px-3 py-1 rounded-full border border-anthropic-light-gray/50 shadow-sm"
+              className="flex items-center gap-1 text-sm text-anthropic-mid hover:text-primary transition-colors bg-white px-3 py-1 rounded-full shadow-sm"
             >
               <X size={14} /> 关闭视频
             </button>
@@ -47,10 +47,10 @@ const Showcases: React.FC = () => {
           <button
             key={idx}
             onClick={() => setActiveVideo(showcase.videoUrl)}
-            className={`text-left p-4 rounded-xl border transition-all flex flex-col gap-1 group ${
+            className={`text-left p-5 rounded-2xl transition-all flex flex-col gap-1 group border border-black/[0.04] ${
               activeVideo === showcase.videoUrl 
-                ? 'bg-white border-primary/40 shadow-md scale-[1.02]' 
-                : 'bg-anthropic-light-gray/20 border-anthropic-light-gray/50 hover:bg-white hover:border-anthropic-light-gray hover:shadow-sm'
+                ? 'bg-white shadow-sm scale-[1.02]' 
+                : 'bg-white hover:bg-gray-50 hover:scale-[1.01]'
             }`}
           >
             <div className="flex items-start justify-between w-full">

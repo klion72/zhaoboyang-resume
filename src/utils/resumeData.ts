@@ -134,16 +134,12 @@ export const resumeData = {
   ],
   skills: [
     {
-      category: "视听工具",
-      content: "DaVinci Resolve、Adobe 系列、Studio One、剪映。",
+      category: "软件运用",
+      content: "视听工具：DaVinci Resolve、Adobe 系列、Studio One、剪映；数据分析：熟练使用 SPSS、E-prime。",
     },
     {
-      category: "音乐和语言能力",
+      category: "音乐与语言",
       content: "架子鼓（十级）、钢琴、CET-6。",
-    },
-    {
-      category: "数据分析",
-      content: "熟练使用 SPSS、E-prime。",
     },
     {
       category: "综合能力",

@@ -1,22 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #d97757;
-  --color-secondary: #6a9bcc;
-  --color-tertiary: #788c5d;
-  --color-anthropic-dark: #141413;
-  --color-anthropic-light: #faf9f5;
-  --color-anthropic-mid: #b0aea5;
-  --color-anthropic-light-gray: #e8e6dc;
+  --color-primary: #0066cc;
+  --color-secondary: #86868b;
+  --color-tertiary: #1d1d1f;
+  --color-anthropic-dark: #1d1d1f;
+  --color-anthropic-light: #ffffff;
+  --color-anthropic-mid: #d2d2d7;
+  --color-anthropic-light-gray: #f5f5f7;
 
-  --font-sans: "Lora", Georgia, serif;
-  --font-body: "Lora", Georgia, serif;
-  --font-headings: "Poppins", Arial, sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-headings: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 @layer base {
   body {
-    @apply bg-anthropic-light-gray text-anthropic-dark font-sans antialiased;
+    @apply bg-[#F5F5F7] text-anthropic-dark font-sans antialiased;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-headings tracking-tight;
@@ -24,12 +24,16 @@
 }
 
 @layer components {
+  .bento-card {
+    @apply bg-transparent p-4 md:p-6 transition-all duration-300;
+  }
+  
   .section-container {
-    @apply mt-8;
+    @apply bg-transparent p-4 md:p-6 transition-all duration-300 h-full;
   }
   
   .section-title {
-    @apply text-2xl font-headings font-semibold text-primary flex items-center gap-3 mb-5 border-b border-anthropic-light-gray pb-3;
+    @apply text-[1.35rem] font-bold text-anthropic-dark flex items-center gap-2.5 mb-6;
   }
 }
 
@@ -38,9 +42,15 @@
     margin: 15mm;
   }
   body {
-    @apply bg-anthropic-light;
+    @apply bg-white;
   }
   .no-print {
     @apply !hidden;
+  }
+  .bento-card {
+    @apply shadow-none border-none p-0 mb-8 rounded-none;
+  }
+  main {
+    display: block !important;
   }
 }

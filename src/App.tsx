@@ -9,18 +9,32 @@ import PrintButton from './components/PrintButton';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#e8e6dc] py-8 px-4 md:py-12 font-body text-[#141413]">
-      <div className="max-w-[960px] mx-auto bg-[#faf9f5] rounded-2xl shadow-xl shadow-[#141413]/10 p-6 md:p-10 border border-[#b0aea5]/30">
+    <div className="min-h-screen bg-[#F5F5F7] py-8 px-4 md:py-12 font-sans text-[#1D1D1F]">
+      <div className="max-w-[1024px] mx-auto">
         <PrintButton />
         
-        <main className="space-y-2">
-          <PersonalInfo />
-          <Showcases />
-          <CoreAdvantages />
-          <Education />
-          <WorkExperience />
-          <CampusProjects />
-          <Skills />
+        <main className="grid grid-cols-1 md:grid-cols-12 gap-6">
+          <div className="col-span-1 md:col-span-12">
+            <PersonalInfo />
+          </div>
+          <div className="col-span-1 md:col-span-12">
+            <Showcases />
+          </div>
+          <div className="col-span-1 md:col-span-12">
+            <CoreAdvantages />
+          </div>
+          <div className="col-span-1 md:col-span-12">
+            <WorkExperience />
+          </div>
+          <div className="col-span-1 md:col-span-12">
+            <CampusProjects />
+          </div>
+          <div className="col-span-1 md:col-span-12">
+            <Education />
+          </div>
+          <div className="col-span-1 md:col-span-12">
+            <Skills />
+          </div>
         </main>
       </div>
     </div>
