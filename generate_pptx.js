@@ -139,20 +139,20 @@ let leftY = 0.5;
 // Name & Role
 slide.addText(resumeData.personalInfo.name, {
     x: 0.3, y: leftY, w: 2.2, h: 0.4,
-    fontSize: 22, bold: true, color: TEXT_DARK, fontFace: "Helvetica"
+    fontSize: 22, bold: true, color: TEXT_DARK, fontFace: "Arial"
 });
 leftY += 0.35;
 
 slide.addText(resumeData.personalInfo.role, {
     x: 0.3, y: leftY, w: 2.2, h: 0.2,
-    fontSize: 11, color: ACCENT, fontFace: "Helvetica", bold: true
+    fontSize: 11, color: ACCENT, fontFace: "Arial", bold: true
 });
 leftY += 0.35;
 
 // Tagline
 slide.addText(resumeData.personalInfo.tagline, {
     x: 0.3, y: leftY, w: 2.2, h: 0.2,
-    fontSize: 9.5, color: TEXT_GRAY, italic: true, fontFace: "Helvetica"
+    fontSize: 9.5, color: TEXT_GRAY, italic: true, fontFace: "Arial"
 });
 leftY += 0.4;
 
@@ -166,12 +166,12 @@ function addLeftHeader(title, y) {
 }
 
 // Contact
-leftY = addLeftHeader("联系方式", leftY);
+leftY = addLeftHeader("个人信息", leftY);
 const contacts = [
+    resumeData.personalInfo.birthDate,
     resumeData.personalInfo.phone,
     resumeData.personalInfo.email,
-    resumeData.personalInfo.location,
-    resumeData.personalInfo.birthDate
+    resumeData.personalInfo.location
 ];
 contacts.forEach(c => {
     slide.addText(c, { x: 0.3, y: leftY, w: 2.2, h: 0.15, fontSize: 9, color: TEXT_GRAY });
@@ -220,10 +220,10 @@ rightY = addRightHeader("核心优势", rightY);
 resumeData.coreAdvantages.forEach(adv => {
     let textStr = adv.title + "  |  " + adv.description;
     let h = getDynamicHeight(textStr, 38); // Approx 38 chars per line in right col
-    slide.addText([{ text: adv.title + "  |  ", options: { bold: true, color: TEXT_DARK } }, { text: adv.description }], {
-        x: RIGHT_X, y: rightY, w: RIGHT_W, h: h, fontSize: 9, color: TEXT_GRAY, valign: "top", lineSpacing: 12
+    slide.addText([{ text: adv.title + "  |  ", options: { bold: true, color: TEXT_DARK, fontSize: 10 } }, { text: adv.description }], {
+        x: RIGHT_X, y: rightY, w: RIGHT_W, h: h, fontSize: 10, color: TEXT_GRAY, valign: "top", lineSpacing: 14
     });
-    rightY += h + 0.08;
+    rightY += h + 0.12;
 });
 rightY += 0.1;
 
