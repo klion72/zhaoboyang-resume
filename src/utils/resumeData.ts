@@ -57,7 +57,7 @@ export const resumeData = {
     {
       company: "抖音平台 / 泛二次元内容创作者",
       role: "个人项目",
-      period: "2020.09 - 2022.06",
+      period: "2019.05 - 2021.01",
       highlights: [
         {
           label: "爆款内容策划",
