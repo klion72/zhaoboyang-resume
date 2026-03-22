@@ -3,7 +3,7 @@ import { resumeData } from '../utils/resumeData';
 
 const Education: React.FC = () => {
   return (
-    <section className="section-container">
+    <section className="section-container pb-4">
       <h2 className="section-title">
         <GraduationCap size={20} className="text-secondary" /> 教育背景
       </h2>

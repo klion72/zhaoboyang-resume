@@ -3,7 +3,7 @@ import { resumeData } from '../utils/resumeData';
 
 const CoreAdvantages: React.FC = () => {
   return (
-    <section className="section-container">
+    <section className="section-container pb-4">
       <h2 className="section-title">
         <Star size={20} className="fill-primary text-primary" /> 核心优势
       </h2>
